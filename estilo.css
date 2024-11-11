@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+.container h1 {
+    color: #175cff;
+    font-size: 4rem;
+}
+
+.timer {
+    display: flex;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+    color: #172953eb;
+    min-width: 9rem;
+}
+
+.separator {
+    padding: 1rem;
+    color: #525763;
+}
+
+.miliseconds {
+    font-size: 3rem;
+    color: #525763;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.Btn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: .1rem solid #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.Btn:hover {
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: #175cff;
+    color: #f1f1f1;
+}
+
+#resetBtn {
+    background-color: #175cff;
+    color: #f1f1f1;
+}
+
+#pauseBtn,
+#resumeBtn {
+    display: none;
+}
+
+#miliseconds,
+#minutes,
+#seconds {
+    position: relative;
+}
+
+#miliseconds::before,
+#minutes::before,
+#seconds::before {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+}
+
+#minutes::before {
+    content: "Minutes";
+}
+
+#seconds::before {
+    content: "Seconds";
+}
+
+#miliseconds::before {
+    content: "Miliseconds";
+}
